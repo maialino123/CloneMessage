@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneMessage.MessagePage">
+    <ContentPage.Resources>
+        <Style x:Key="ImageIconCloneMessage" TargetType="Image">
+            <Setter Property="WidthRequest" Value="16" />
+            <Setter Property="HeightRequest" Value="16" />
+            <Setter Property="HorizontalOptions" Value="EndAndExpand" />
+            <Setter Property="Source" Value="right.png" />
+        </Style>
+        <Style x:Key="LabelDateCloneMessage" TargetType="Label">
+            <Setter Property="TextColor" Value="Gray" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.RowSpan="3" BackgroundColor="AliceBlue" />
+            <Grid Grid.RowSpan="3">
+                <CollectionView ItemsSource="{Binding Messages}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="15,20,15,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="60" />
+                                </Grid.RowDefinitions>
+                                <Frame BackgroundColor="Green" 
+                                       WidthRequest="-10" 
+                                       HorizontalOptions="StartAndExpand"
+                                       CornerRadius="13"/>
+                                <Frame BackgroundColor="White" CornerRadius="0" Margin="18,0,10,0"/>
+                                <Frame BackgroundColor="White" CornerRadius="13" HorizontalOptions="EndAndExpand"/>
+                                <StackLayout Padding="30,10,0,0" Spacing="5">
+                                    <Label Text="{Binding Name}" FontSize="16" FontAttributes="Bold"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                        <Label Style="{StaticResource LabelDateCloneMessage}" Text="{Binding DateTime}"/>
+                                        <Image Style="{StaticResource ImageIconCloneMessage}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
