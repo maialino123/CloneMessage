@@ -31,7 +31,7 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="60" />
                                 </Grid.RowDefinitions>
-                                <Frame BackgroundColor="Green" 
+                                <Frame BackgroundColor="{Binding ColorMessage}" 
                                        WidthRequest="-10" 
                                        HorizontalOptions="StartAndExpand"
                                        CornerRadius="13"/>

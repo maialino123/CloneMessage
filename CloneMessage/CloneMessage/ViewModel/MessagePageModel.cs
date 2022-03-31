@@ -15,10 +15,30 @@ namespace CloneMessage
 
         }
         public ObservableCollection<MessageModel> Messages { get; set; }
+
         public override void Init(object initData)
         {
             base.Init(initData);
-            Messages = new ObservableCollection<MessageModel>(InitDataMessage());
+            var messageList = new ObservableCollection<MessageModel>(InitDataMessage());
+            foreach (var item in messageList)
+            {
+                switch (item.Title)
+                {
+                    case "ThankYou":
+                        item.ColorMessage = "#00FF00";
+                        break;
+                    case "Notification":
+                        item.ColorMessage = "#000080";
+                        break;
+                    case "Welcome":
+                        item.ColorMessage = "#800000";
+                        break;
+                    default:
+                        item.ColorMessage = "#2F4F4F";
+                        break;
+                }
+            }
+            Messages = messageList;
         }
 
 
