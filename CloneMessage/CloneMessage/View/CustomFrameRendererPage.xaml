@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:controls="clr-namespace:CloneMessage.View.Controls"
              x:Class="CloneMessage.CustomFrameRendererPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="colorText">#000</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid Padding="10" VerticalOptions="Center">
             <Grid.RowDefinitions>
@@ -24,14 +29,14 @@
                     <ColumnDefinition  Width="2*"/>
                     <ColumnDefinition  Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <controls:MyFrame BorderColor="Orange" Grid.ColumnSpan="2" controls:CornerRadius="10">
+                <controls:MyFrame BorderColor="Orange" Grid.ColumnSpan="2" CornerRadius="16" Stroke="8">
                 </controls:MyFrame>
                 <StackLayout Margin="30">
-                    <Label Text="&#xf009E;" FontFamily="{StaticResource MaterialFont}" FontSize="30" TextColor="#000"/>
+                    <Label Text="&#xf009E;" FontFamily="{StaticResource MaterialFont}" FontSize="30" TextColor="{StaticResource colorText}"/>
                 </StackLayout>
                 <StackLayout Spacing="4" Grid.Column="1" VerticalOptions="Center" Margin="-16,0,0,0">
-                    <Label Text="Reminder: Free Service" FontSize="16" FontAttributes="Bold" TextColor="#000"/>
-                    <Label Text="You will use coupon for free maintenance" FontSize="13" TextColor="#000"/>
+                    <Label Text="Reminder: Free Service" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource colorText}"/>
+                    <Label Text="You will use coupon for free maintenance" FontSize="13" TextColor="{StaticResource colorText}"/>
                     <Label Text="Date: 21/01/2021 - 13/04/2021" TextColor="#000" FontSize="15" FontAttributes="Bold"/>
                 </StackLayout>
             </Grid>

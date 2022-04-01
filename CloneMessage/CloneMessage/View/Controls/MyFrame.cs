@@ -13,7 +13,6 @@ namespace CloneMessage.View.Controls
             base.BorderColor = Color.Orange;
         }
 
-        //Using Bindable Create Intance
         public static new readonly BindableProperty BorderColorProperty = BindableProperty.Create(
             nameof(BorderColor),
             typeof(Color),
@@ -25,21 +24,27 @@ namespace CloneMessage.View.Controls
             set => SetValue(BorderColorProperty, value);
         }
 
-        //Using Bindable Create Attached
-        public static readonly BindableProperty HasCornerRadiusProperty = BindableProperty.CreateAttached(
-            "HasCornerRadius",
+        public static new readonly BindableProperty CornerRadiusProperty = BindableProperty.CreateAttached(
+            nameof(CornerRadius),
             typeof(float),
-            typeof(MyFrame),
-            0f);
+            typeof(MyFrame),0f);
 
-        public static void SetHasCornerRadiusProperty(BindableObject view, float hasCornerRadius)
+        public new float CornerRadius 
         {
-            view.SetValue(HasCornerRadiusProperty, hasCornerRadius);
+            get => (float)GetValue(CornerRadiusProperty); 
+            set => SetValue(CornerRadiusProperty, value); 
         }
 
-        public static float GetHasCornerRadiusProperty(BindableObject view)
+        public static readonly BindableProperty StrokeProperty = BindableProperty.Create(
+            nameof(Stroke),
+            typeof(int),
+            typeof(MyFrame),0);
+        public int Stroke 
         {
-            return (float)view.GetValue(HasCornerRadiusProperty);
+            get => (int)GetValue(StrokeProperty);
+            set => SetValue(StrokeProperty,value);
         }
+
     }
+
 }

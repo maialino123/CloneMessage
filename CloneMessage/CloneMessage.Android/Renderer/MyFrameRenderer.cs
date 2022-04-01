@@ -30,7 +30,9 @@ namespace CloneMessage.Droid.Renderer
             base.OnElementPropertyChanged(sender, e);
 
             if(e.PropertyName == nameof(MyFrame.BorderColor) ||
-                e.PropertyName == nameof(MyFrame))
+                e.PropertyName == nameof(MyFrame) ||
+                e.PropertyName == nameof(MyFrame.CornerRadius)||
+                e.PropertyName == nameof(MyFrame.Stroke))
             {
                 UpdateCornerRadius();
             }
@@ -39,11 +41,12 @@ namespace CloneMessage.Droid.Renderer
         private void UpdateCornerRadius()
         {
             var borderColor = (Element as MyFrame).BorderColor;
-            var cornerRadius = (Element as MyFrame).CornerRadius;
+            float cornerRadius = (Element as MyFrame).CornerRadius;
+            int stroke = (Element as MyFrame).Stroke;
 
             var gradentDrawable = new GradientDrawable();
-            gradentDrawable.SetCornerRadius(20);
-            gradentDrawable.SetStroke((int)cornerRadius, Android.Graphics.Color.ParseColor(borderColor.ToHex()));
+            gradentDrawable.SetCornerRadius(cornerRadius);
+            gradentDrawable.SetStroke(stroke, Android.Graphics.Color.ParseColor(borderColor.ToHex()));
 
             this.SetBackgroundDrawable(gradentDrawable);
         }
