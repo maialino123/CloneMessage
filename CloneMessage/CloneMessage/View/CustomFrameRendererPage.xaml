@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:CloneMessage.View.Controls"
+             x:Class="CloneMessage.CustomFrameRendererPage">
+    <ContentPage.Content>
+        <Grid Padding="10" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <BoxView BackgroundColor="AliceBlue" Grid.RowSpan="3" Grid.ColumnSpan="2" />
+            <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="90"/>
+                    <ColumnDefinition  Width="2*"/>
+                    <ColumnDefinition  Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <controls:MyFrame BorderColor="Orange" Grid.ColumnSpan="2" controls:CornerRadius="10">
+                </controls:MyFrame>
+                <StackLayout Margin="30">
+                    <Label Text="&#xf009E;" FontFamily="{StaticResource MaterialFont}" FontSize="30" TextColor="#000"/>
+                </StackLayout>
+                <StackLayout Spacing="4" Grid.Column="1" VerticalOptions="Center" Margin="-16,0,0,0">
+                    <Label Text="Reminder: Free Service" FontSize="16" FontAttributes="Bold" TextColor="#000"/>
+                    <Label Text="You will use coupon for free maintenance" FontSize="13" TextColor="#000"/>
+                    <Label Text="Date: 21/01/2021 - 13/04/2021" TextColor="#000" FontSize="15" FontAttributes="Bold"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

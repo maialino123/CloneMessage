@@ -30,3 +30,4 @@ C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\ob
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\refint\CloneMessage.dll
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.pdb
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\ref\CloneMessage.dll
+C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\View\CustomFrameRendererPage.xaml.g.cs

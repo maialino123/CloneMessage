@@ -1268,3 +1268,4 @@ C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage.An
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage.Android\obj\Debug\120\android\src\crc643bc4a8a47d523359\MyFrameRenderer.java
