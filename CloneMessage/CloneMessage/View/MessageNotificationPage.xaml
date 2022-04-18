@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CloneMessage.MessageNotificationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <BoxView Grid.RowSpan="2">
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStop Offset="0.05" Color="#fff" />
+                    <GradientStop Offset="0.9" Color="Orange" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <Grid
+            Grid.Row="0"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand">
+
+
+            <Path Stroke="Black">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigureCollection>
+                                <PathFigure StartPoint="10,50">
+                                    <PathFigure.Segments>
+                                        <PathSegmentCollection>
+                                            <LineSegment Point="10,150" />
+                                            <LineSegment Point="150,150" />
+                                            <LineSegment Point="150,10" />
+                                            <LineSegment Point="10,10" />
+                                            <LineSegment Point="10,30" />
+                                            <LineSegment Point="1,30" />
+                                            <LineSegment Point="1,30" />
+                                        </PathSegmentCollection>
+                                    </PathFigure.Segments>
+                                </PathFigure>
+                            </PathFigureCollection>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+
+
+        </Grid>
+
+    </Grid>
+</ContentPage>

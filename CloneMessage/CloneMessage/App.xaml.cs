@@ -1,4 +1,7 @@
-﻿using FreshMvvm;
+﻿using CloneMessage.Model;
+using CloneMessage.Services;
+using CloneMessage.Services.IService;
+using FreshMvvm;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +15,9 @@ namespace CloneMessage
         {
             InitializeComponent();
 
-            var page = FreshPageModelResolver.ResolvePageModel<CustomFrameRendererPageModel>();
+            FreshIOC.Container.Register<IDataService<CouponModel>, CouponService>();
+
+            var page = FreshPageModelResolver.ResolvePageModel<FrameTestPageModel>();
             var basicNavContainer = new FreshNavigationContainer(page);
             MainPage = basicNavContainer;
         }

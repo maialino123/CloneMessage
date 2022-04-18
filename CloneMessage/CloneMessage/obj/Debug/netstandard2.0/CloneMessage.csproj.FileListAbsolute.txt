@@ -31,3 +31,22 @@ C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\ob
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.pdb
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\ref\CloneMessage.dll
 C:\Users\M4800\source\repos\New folder\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\View\CustomFrameRendererPage.xaml.g.cs
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\bin\Debug\netstandard2.0\CloneMessage.deps.json
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\bin\Debug\netstandard2.0\CloneMessage.dll
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\bin\Debug\netstandard2.0\CloneMessage.pdb
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.csproj.AssemblyReference.cache
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.GeneratedMSBuildEditorConfig.editorconfig
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\View\CustomFrameRendererPage.xaml.g.cs
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\View\MessagePage.xaml.g.cs
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.AssemblyInfoInputs.cache
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.AssemblyInfo.cs
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.csproj.CoreCompileInputs.cache
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\XamlC.stamp
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.dll
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\refint\CloneMessage.dll
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\CloneMessage.pdb
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\ref\CloneMessage.dll
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\View\MessageNotificationPage.xaml.g.cs
+F:\Repos\CloneMessage\CloneMessage\CloneMessage\obj\Debug\netstandard2.0\View\FrameTestPage.xaml.g.cs

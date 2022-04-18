@@ -1,31 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\M4800\\source\\repos\\New folder\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj": {}
+    "F:\\Repos\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\M4800\\source\\repos\\New folder\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj": {
+    "F:\\Repos\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\M4800\\source\\repos\\New folder\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj",
+        "projectUniqueName": "F:\\Repos\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj",
         "projectName": "CloneMessage",
-        "projectPath": "C:\\Users\\M4800\\source\\repos\\New folder\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj",
-        "packagesPath": "C:\\Users\\M4800\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\M4800\\source\\repos\\New folder\\CloneMessage\\CloneMessage\\CloneMessage\\obj\\",
+        "projectPath": "F:\\Repos\\CloneMessage\\CloneMessage\\CloneMessage\\CloneMessage.csproj",
+        "packagesPath": "F:\\Nuget_Package",
+        "outputPath": "F:\\Repos\\CloneMessage\\CloneMessage\\CloneMessage\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\M4800\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tunb1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "F:\\Nuget_Package": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
