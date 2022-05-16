@@ -2,91 +2,17 @@
 <ContentPage
     x:Class="CloneMessage.FrameTestPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Grid
-                HeightRequest="500"
-                HorizontalOptions="FillAndExpand"
-                RowDefinitions="Auto,Auto,75,*"
-                RowSpacing="5"
-                VerticalOptions="FillAndExpand">
-                <Frame
-                    Grid.RowSpan="4"
-                    BackgroundColor="Aqua"
-                    CornerRadius="12" />
-
-                <Label
-                    FontSize="16"
-                    HorizontalOptions="CenterAndExpand"
-                    MaxLines="2"
-                    Text="Regular Maintanance"
-                    TextColor="Red"
-                    VerticalOptions="CenterAndExpand" />
-                <Label
-                    Grid.Row="1"
-                    FontSize="13"
-                    HorizontalOptions="CenterAndExpand"
-                    MaxLines="1"
-                    Text="Use coupons for free maintenance"
-                    VerticalOptions="CenterAndExpand" />
-
-
-                <Grid Grid.Row="2" ColumnDefinitions="8*,2*">
-                    <FlexLayout
-                        AlignContent="Start"
-                        AlignItems="Start"
-                        BindableLayout.ItemsSource="{Binding ListCoupons1}"
-                        HorizontalOptions="StartAndExpand"
-                        JustifyContent="Start"
-                        VerticalOptions="StartAndExpand"
-                        Wrap="Wrap">
-                        <BindableLayout.ItemTemplate>
-                            <DataTemplate>
-                                <Image
-                                    Margin="10,10,10,0"
-                                    HeightRequest="60"
-                                    Source="{Binding ImageUrl}"
-                                    WidthRequest="60" />
-                            </DataTemplate>
-                        </BindableLayout.ItemTemplate>
-                    </FlexLayout>
-
-                    <Image
-                        Grid.Column="1"
-                        Margin="10,10,10,0"
-                        HeightRequest="60"
-                        HorizontalOptions="EndAndExpand"
-                        Source="icon1.png"
-                        VerticalOptions="CenterAndExpand"
-                        WidthRequest="60" />
-                    <Label
-                        FontSize="20"
-                        HorizontalOptions="EndAndExpand"
-                        Text="..." />
-                </Grid>
-
-                <FlexLayout
-                    Grid.Row="3"
-                    AlignContent="Start"
-                    AlignItems="Center"
-                    BindableLayout.ItemsSource="{Binding ListCoupons2}"
-                    HorizontalOptions="CenterAndExpand"
-                    JustifyContent="Center"
-                    Wrap="Wrap">
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate>
-                            <Image
-                                Margin="10,10,10,0"
-                                HeightRequest="40"
-                                IsVisible="{Binding IsCouponShow}"
-                                Source="{Binding ImageUrl}"
-                                WidthRequest="40" />
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
-
-                </FlexLayout>
-            </Grid>
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:CloneMessage.View.Controls">
+    <ScrollView controls:ScollView.IsScoll="True">
+        <StackLayout BindableLayout.ItemsSource="{Binding ListCoupons1}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout controls:ScollView.TargetScollTo="{Binding ImageUrl}" Orientation="Horizontal">
+                        <Label Padding="10,20" Text="{Binding ImageUrl}" />
+                    </StackLayout>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

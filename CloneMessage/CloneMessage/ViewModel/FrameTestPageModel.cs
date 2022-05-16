@@ -1,4 +1,5 @@
 ﻿using CloneMessage.Model;
+using CloneMessage.Services;
 using CloneMessage.Services.IService;
 using FreshMvvm;
 using System;
@@ -30,20 +31,7 @@ namespace CloneMessage
         {
             base.Init(initData);
             var ListCoupons = new ObservableCollection<CouponModel>(_dataService.GetAll());
-
-            if (ListCoupons.Count > 0)
-            {
-                ListCoupons1 = new ObservableCollection<CouponModel>(ListCoupons.Take(4));
-                ListCoupons2 = new ObservableCollection<CouponModel>(ListCoupons.Skip(4));
-
-                for (int i = 0; i < ListCoupons2.Count; i++)
-                {
-                    
-                   ListCoupons2.ElementAt(i).IsCouponShow = false;
-                }
-            }
+            ListCoupons1 = new ObservableCollection<CouponModel>(ListCoupons);  
         }
-
-
     }
 }
