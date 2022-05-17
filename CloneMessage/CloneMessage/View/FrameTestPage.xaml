@@ -5,10 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:CloneMessage.View.Controls">
     <ScrollView controls:ScollView.IsScoll="True">
-        <StackLayout BindableLayout.ItemsSource="{Binding ListCoupons1}">
+        <StackLayout controls:ScollView.TargetScollTo="{Binding TargetScroll}" BindableLayout.ItemsSource="{Binding ListCoupons1}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout controls:ScollView.TargetScollTo="{Binding ImageUrl}" Orientation="Horizontal">
+                    <StackLayout controls:ScollView.TargetTo="{Binding ImageUrl}" Orientation="Horizontal">
                         <Label Padding="10,20" Text="{Binding ImageUrl}" />
                     </StackLayout>
                 </DataTemplate>

@@ -17,6 +17,7 @@ namespace CloneMessage
 
         public ObservableCollection<CouponModel> ListCoupons1 { get; set; }
         public ObservableCollection<CouponModel> ListCoupons2 { get; set; }
+        public string TargetScroll { get; set; } = "abcdsahfsaohnd";
 
 
         private readonly IDataService<CouponModel> _dataService;
@@ -31,7 +32,7 @@ namespace CloneMessage
         {
             base.Init(initData);
             var ListCoupons = new ObservableCollection<CouponModel>(_dataService.GetAll());
-            ListCoupons1 = new ObservableCollection<CouponModel>(ListCoupons);  
+            ListCoupons1 = new ObservableCollection<CouponModel>(ListCoupons);
         }
     }
 }
